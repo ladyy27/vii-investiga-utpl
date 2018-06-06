@@ -20,16 +20,16 @@
 </style>
 
 		<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="3YkC7B1Bkm3IYvfjIPaRRpt+3R/kquQraOekTabfvm6w0PcxS/Fjiu7toJO0Achrl5n+RXXxqy8yeY8pcy6iAA==" />
+<meta name="csrf-token" content="U81MW03k6WpDA6eVSbaNhD+pLxGtOD5dAWOyhTcsikU46M3MdbqzACHIJh8JpThexElnQTBQCTw+S90TI35KPA==" />
 		<style id="user-css-output" type="text/css"></style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section class="stack" data-id="1323a95027236a2cf2a60176d46c0705"><section data-id="c35921ab594ebd4d9b3c14561252b648"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 70px; height: auto;" data-block-id="bb63d1b0c50cdf65c1e6aa0ffcfcdd3c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; text-align: center; letter-spacing: -0.05em; line-height: 0.819;" data-has-letter-spacing="" data-has-line-height="">
+				<section class="stack" data-id="1323a95027236a2cf2a60176d46c0705"><section data-id="c35921ab594ebd4d9b3c14561252b648"><div class="sl-block" data-block-type="text" style="width: 806px; left: 157px; top: 70px; height: auto;" data-block-id="bb63d1b0c50cdf65c1e6aa0ffcfcdd3c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; text-align: center; letter-spacing: -0.05em; line-height: 0.819;" data-has-letter-spacing="" data-has-line-height="">
 <h1><span style="font-size:0.7em">Propuesta de arquitectura de microservicios para procesamiento de lenguaje natural</span></h1>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 794px; left: 86px; top: 385px;" data-block-id="71d8e6ed789a0d4415e1e84f9fe17179"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: right;">
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 794px; left: 163px; top: 351px;" data-block-id="71d8e6ed789a0d4415e1e84f9fe17179"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: right; line-height: 1.001;" data-has-line-height="">
 <p><span style="font-size:1.0em">Por: Nelson Piedra (A)</span></p>
 
 <p><span style="font-size:1.0em">Lady Yaguachi (B)</span></p>
@@ -39,10 +39,11 @@
 <p><strong>(A): Docente Investigador-UTPL</strong></p>
 
 <p><strong>(B): Técnico de investigación</strong></p>
-</div></div></section><section data-id="5735e410a82b158c45f7049fe279aa14"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 134px; height: auto;" data-block-id="6aae8937328263c24ce2429134e37fba"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 232px; height: 94px; left: 436px; top: 561px;" data-block-id="0aee959939a0b419f9f2d963b7c030a8"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="232" data-natural-height="94" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/892546/images/5001867/institucional_color.png.png"></div></div></section><section data-id="5735e410a82b158c45f7049fe279aa14"><div class="sl-block" data-block-type="text" style="width: 806px; left: 158px; top: 119px; height: auto;" data-block-id="6aae8937328263c24ce2429134e37fba"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
 <h1>Introducción</h1>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 75px; top: 320px;" data-block-id="26045098430a0bc3f9eeab03bce21417"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 965px; left: 75px; top: 320px;" data-block-id="26045098430a0bc3f9eeab03bce21417"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
 <ul>
 	<li style="text-align:justify">
 <strong>NLP:</strong> R<span>epresentar el lenguaje natural de manera similar a un humano (Gelbukh, 2010).</span>
@@ -53,33 +54,33 @@
 	<p><span><strong>Trabajos relacionados:</strong> SaaS NLP (</span>Dale, 2015<span>), </span>LPMN (Walkowiak, 2018).</p>
 	</li>
 </ul>
-</div></div></section><section data-id="02ec8d12edf59d129c06dcc9fc7022d7"><div class="sl-block" data-block-type="text" style="width: 806px; left: 78px; top: 70px; height: auto;" data-block-id="633bda16e0d830c02be7d0bd2a8c343b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+</div></div></section><section data-id="02ec8d12edf59d129c06dcc9fc7022d7"><div class="sl-block" data-block-type="text" style="width: 806px; left: 157px; top: 134px; height: auto;" data-block-id="633bda16e0d830c02be7d0bd2a8c343b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
 <h1>Modelo Propuesto</h1>
 </div></div>
-<div class="sl-block" data-block-type="text" style="width: 806px; left: 78px; top: 217px; height: auto;" data-block-id="27352b571ad4a33c75564301382df23b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 158px; top: 273px; height: auto;" data-block-id="27352b571ad4a33c75564301382df23b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;">
 <h2>Tener en cuenta:</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 181px; top: 350px;" data-block-id="88a5d02caa76d23d9761e53eb1dfa044"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 237px; top: 388px;" data-block-id="88a5d02caa76d23d9761e53eb1dfa044"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
 <ul>
 	<li>Funcionalidad de la aplicación</li>
 	<li>Tareas NLP</li>
 	<li>Naturaleza de los MS </li>
 </ul>
-</div></div></section><section data-id="32ad46cee8fe5c0a2b0bec20e127044c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 78px; top: 103px; height: auto;" data-block-id="a4f36b1f9a634b67c812f5531b9a0f25">
+</div></div></section><section data-id="32ad46cee8fe5c0a2b0bec20e127044c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 156px; top: 154px; height: auto;" data-block-id="a4f36b1f9a634b67c812f5531b9a0f25">
     <div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
         <h2>Fases:</h2>
     </div>
 </div>
-<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 876px; height: 207px; left: 39px; top: 269px;" data-block-id="c9f0b0c1ac2d12598196bc5fa87dd433"><div class="sl-block-content" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-up"><img style="" data-natural-width="1342" data-natural-height="317" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/892546/images/5001369/fasesMS-NLP.svg"></div></div></section><section data-id="8add2453722ca4a780f71778484480db"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 42px; height: auto;" data-block-id="89de021953576112c1fa5f2b127f9157"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 876px; height: 207px; left: 124px; top: 297px;" data-block-id="c9f0b0c1ac2d12598196bc5fa87dd433"><div class="sl-block-content" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-up"><img style="" data-natural-width="1342" data-natural-height="317" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/892546/images/5001369/fasesMS-NLP.svg"></div></div></section><section data-id="8add2453722ca4a780f71778484480db"><div class="sl-block" data-block-type="text" style="width: 806px; left: 157px; top: 47px; height: auto;" data-block-id="89de021953576112c1fa5f2b127f9157"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
 <h2>Modelo final:</h2>
 </div></div>
-<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 590px; height: 518px; left: 187px; top: 105px;" data-block-id="b694f2e0a29ca8765ca7c66dde976d49"><div class="sl-block-content" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-up"><img style="" data-natural-width="702" data-natural-height="616" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/892546/images/5001395/NLPArchitecture.png"></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 669px; left: 147px; top: 611px;" data-block-id="ea7b5256c6a3c41c0eb5ec4866b2c518"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-up">
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 590px; height: 518px; left: 267px; top: 121px;" data-block-id="b694f2e0a29ca8765ca7c66dde976d49"><div class="sl-block-content" style="z-index: 12; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-up"><img style="" data-natural-width="702" data-natural-height="616" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/892546/images/5001395/NLPArchitecture.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 669px; left: 230px; top: 626px;" data-block-id="ea7b5256c6a3c41c0eb5ec4866b2c518"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-up">
 <p><span style="font-size:0.7em"><em>Figura 1. Arquitectura de microservicios propuesta para aplicación NLP</em></span></p>
-</div></div></section><section data-id="4ef800e286522b51abe3548b3f1d0b11"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 140px; height: auto;" data-block-id="c10fcbc474d91e7d95a59b6e20eee44d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+</div></div></section><section data-id="4ef800e286522b51abe3548b3f1d0b11"><div class="sl-block" data-block-type="text" style="width: 806px; left: 158px; top: 140px; height: auto;" data-block-id="c10fcbc474d91e7d95a59b6e20eee44d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
 <h2>Resultados y Discusión</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="width: 806px; left: 70px; top: 263px; height: auto;" data-block-id="61cfbdc35f620114703d083b72fd9ce0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<div class="sl-block" data-block-type="text" style="width: 970px; left: 75px; top: 283px; height: auto;" data-block-id="61cfbdc35f620114703d083b72fd9ce0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
 <ul>
 	<li>
 	<p style="text-align: justify;">API REST como mecanismo de comunicación de microservicios NLP y Linked Data como gestor de información.</p>
@@ -88,15 +89,16 @@
 	<li style="text-align: justify;">
 <strong>Trabajos futuros:</strong> Uso del modelo arquitectónico en proyectos NLP (planes de estudios, OER's)</li>
 </ul>
-</div></div></section><section data-id="ae3910d85cbe1b4fee07d238adb95e00"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="b99a7dcb4dc036d13ffd1dbc0e5642af"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+</div></div></section><section data-id="ae3910d85cbe1b4fee07d238adb95e00"><div class="sl-block" data-block-type="text" style="width: 806px; left: 158px; top: 139px; height: auto;" data-block-id="b99a7dcb4dc036d13ffd1dbc0e5642af"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
 <h1>¡Gracias!</h1>
-</div></div></section></section>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 500px; height: 300px; left: 309px; top: 270px;" data-block-id="b840c724814435e4723cf156b3b91235"><div class="sl-block-content" style="z-index: 12; border-style: solid; border-width: 1px;"><img style="" data-natural-width="500" data-natural-height="300" data-src="https://media3.giphy.com/media/l2R0eYcNq9rJUsVAA/giphy.gif"></div></div></section></section>
 			</div>
 		</div>
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":892546,"username":"ladyyaguachi","name":"Lady Yaguachi","description":null,"thumbnail_url":"https://lh4.googleusercontent.com/-3B7Ux0tGsdQ/AAAAAAAAAAI/AAAAAAAATcg/I-MtRZB8x6k/photo.jpg","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":1423309,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":null,"phone_number":null,"phone_country_code":null,"media_sources":"unsplash,giphy"},"email":"ladyy27@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":205691,"storage_limit":262144000},"deck":{"id":1271107,"slug":"propuesta-ms-nlp","title":"Propuesta MS para NLP","description":"","width":960,"height":700,"visibility":"all","published_at":"2018-06-06T14:30:59.361Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/216a65c72928cdca8c4a8c66a2d5b645/thumb.jpg?1528326990","view_count":0,"user":{"id":892546,"username":"ladyyaguachi","name":"Lady Yaguachi","description":null,"thumbnail_url":"https://lh4.googleusercontent.com/-3B7Ux0tGsdQ/AAAAAAAAAAI/AAAAAAAATcg/I-MtRZB8x6k/photo.jpg","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":1423309,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"concave","transition":"concave","theme_id":null,"theme_font":"montserrat","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":8,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1528326990356,"font_typekit":null,"font_google":null,"notes":{}},"user":{"id":892546,"username":"ladyyaguachi","name":"Lady Yaguachi","description":null,"thumbnail_url":"https://lh4.googleusercontent.com/-3B7Ux0tGsdQ/AAAAAAAAAAI/AAAAAAAATcg/I-MtRZB8x6k/photo.jpg","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":1423309,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+	var SLConfig = {"current_user":{"id":892546,"username":"ladyyaguachi","name":"Lady Yaguachi","description":null,"thumbnail_url":"https://lh4.googleusercontent.com/-3B7Ux0tGsdQ/AAAAAAAAAAI/AAAAAAAATcg/I-MtRZB8x6k/photo.jpg","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":1423309,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":null,"phone_number":null,"phone_country_code":null,"media_sources":"unsplash,giphy"},"email":"ladyy27@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":346082,"storage_limit":262144000},"deck":{"id":1271107,"slug":"propuesta-ms-nlp","title":"Propuesta MS para NLP","description":"","width":1280,"height":720,"visibility":"all","published_at":"2018-06-06T14:30:59.361Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/216a65c72928cdca8c4a8c66a2d5b645/thumb.jpg?1528340843","view_count":0,"user":{"id":892546,"username":"ladyyaguachi","name":"Lady Yaguachi","description":null,"thumbnail_url":"https://lh4.googleusercontent.com/-3B7Ux0tGsdQ/AAAAAAAAAAI/AAAAAAAATcg/I-MtRZB8x6k/photo.jpg","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":1423309,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"concave","transition":"concave","theme_id":null,"theme_font":"montserrat","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":8,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1528341174185,"font_typekit":null,"font_google":null,"notes":{}},"user":{"id":892546,"username":"ladyyaguachi","name":"Lady Yaguachi","description":null,"thumbnail_url":"https://lh4.googleusercontent.com/-3B7Ux0tGsdQ/AAAAAAAAAAI/AAAAAAAATcg/I-MtRZB8x6k/photo.jpg","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":1423309,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
 </script>
 
 		<script>
